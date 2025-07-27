@@ -1,3 +1,5 @@
+// OBJECTS_02
+/*
 const clgStudent = new Object(); //DECLARED BY CONSTRUTOR
 // const obj2 = {}; //DECLARED BY LITERAL
 
@@ -64,3 +66,29 @@ const obj3 = { ...obj1, ...obj2 }; //spread operator
 // console.log(BHOOVESH.hasOwnProperty("clg"))
 // console.log(BHOOVESH.hasOwnProperty("epic"))
 
+*/
+
+// DESSTRUCURING OBJECTS->{cheeze bar bar use m ayegi to usko same code(.{dot} notation) se access krne ki bajay naye syntax se denote kro}
+const clgStudent = new Object();
+
+clgStudent.name = "BHOOVESH";
+clgStudent.id = "23BCE10242";
+clgStudent.school = "SCOPE";
+clgStudent.sem = "SIXTH";
+
+console.log(clgStudent.name); // Accessing property using dot notation(ab agr isko bar bar acecess krna pada to isko bar bar dot notation se access krna padega)
+
+const { school } = clgStudent; //const {jisko extract krna} = jaha se krna
+const { school: scl } = clgStudent; //const {jisko extract krna : abse kya likhunga} = jaha se krna
+
+console.log(school);
+console.log(scl);
+
+//API KI VALUES PEHLE XML FORM M ATI THI AB JSON M ATI H
+
+// JSON STRUCTURES->object declaration withiut name+key(string)+values(string)
+// {
+//   name:"BHOOVI",
+//   weakness:"GOOD RESUME",
+//   good_at:"PROBLEM SOLVING"
+// }

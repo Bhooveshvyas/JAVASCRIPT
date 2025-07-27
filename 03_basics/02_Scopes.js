@@ -1,0 +1,27 @@
+if (true) {
+  const a = 10;
+  let b = 20;
+  var c = 30;
+}
+
+// BELOW 2 LINES WILL GIVE ERROR
+// console.log(a);
+// console.log(b);
+console.log(c); //THIS LINE WILL NOT GET AN ERROR BCZ THE DATA DYPE IS VAR🥲.
+
+// CASE - 2
+var d = 400;
+
+if (true) {
+  var d = 40;
+}
+// PEHLE GUESS KRO KY AYEGA FR SOCHO GLT KYO HAI
+console.log(d); //VAR AKHAND CHUTIYA VARIABLE HAI JO KI SCOPE OF VARIABLE KO CONSIDER HI NAHI KRTA😤 ISLIYE SIR NE BOLA THA KI VAR DATA TYPE KO HUMLOG USE NAIH KRENGE
+
+let e = 500;
+
+if (true) {
+  let e = 50;
+}
+
+console.log(e); //ISKA MTLB YEH NIKALTA HAI KI LET DATATYPE MEIN YE SAB BACKCHODI NAHI HOTI WO IJJAT SE SCOPE OF VARIBALE KO OBEY KREGA
